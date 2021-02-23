@@ -76,7 +76,6 @@ const Wall = ({ data }) => {
         spanAttrs.style = {
             backgroundImage: `url('${data.titleImage}')`,
         }
-
     }
 
     const innerComponents = (
@@ -97,7 +96,7 @@ const Wall = ({ data }) => {
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
-                    title="SEE WORKS"
+                    title="DOWIEDZ SIĘ WIĘCEJ"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
@@ -121,7 +120,7 @@ const Wall = ({ data }) => {
                     <img
                         src={data.titleImage}
                         alt=""
-                        className="h-full w-auto max-w-none lg:h-auto lg:w-full"
+                        className="h-full bg-cover w-auto max-w-none lg:h-auto lg:w-full sm:w-full sm:object-cover"
                     />
                 </div>
                 <div className="flex-1 text-center p-3 relative z-10 lg:text-left lg:pl-8 text-white lg:text-color-default">

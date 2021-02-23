@@ -1,41 +1,41 @@
 const siteMetadata = {
-    title: `Elemental`,
+    title: `Fizjoterapia Koni`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
-    titleImage: `/images/wall.png`,
-    ogImage: `/images/wall.png`,
+    titleImage: `/images/main1.jpeg`,
+    ogImage: `/images/main1.jpeg`,
     twoColumnWall: true,
     cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
+    introTag: `Dorota Chojecka |  Certyfikowany Fizjoterapeuta Koni`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     about:
         "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
-    author: `@_akzhy`,
+    author: `pianoDog studio`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
     switchTheme: true,
     navLinks: [
         {
-            name: "HOME",
+            name: "START",
             url: "/",
         },
         {
-            name: "ABOUT",
+            name: "OFERTA",
             url: "/about",
         },
+        // {
+        //     name: "BLOG",
+        //     url: "/blog",
+        // },
         {
-            name: "BLOG",
-            url: "/blog",
-        },
-        {
-            name: "PORTFOLIO",
+            name: "USŁIGI I CENNIK",
             url: "/portfolio",
         },
         {
-            name: "CONTACT",
+            name: "KONTAKT",
             url: "/contact",
         },
     ],
@@ -56,18 +56,8 @@ const siteMetadata = {
             url: "#",
         },
         {
-            name: "Twitter",
-            icon: "/images/Twitter.svg",
-            url: "#",
-        },
-        {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#",
-        },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
             url: "#",
         },
     ],
@@ -156,7 +146,7 @@ const defaults = {
     darkmode: false,
     switchTheme: true,
     capitalizeTitleOnHome: true,
-    cookiePolicy: false
+    cookiePolicy: false,
 }
 
 Object.keys(defaults).forEach(item => {
