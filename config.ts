@@ -9,7 +9,7 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Dorota Chojecka | Certyfikowany Fizjoterapeuta Koni`,
-    description: `Strona w budowie...`,
+    description: `Tel: 695 492 704 Strona w budowie...`,
     about: "Fizjoterapia koni",
     author: `pianoDog studio`,
     blogItemsPerPage: 10,
