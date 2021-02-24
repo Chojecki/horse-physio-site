@@ -5,15 +5,21 @@ import PortfolioItem from "../components/item-portfolio"
 import Pagination from "../components/pagination"
 import { PortfolioListQuery } from "./__generated__/PortfolioListQuery"
 
-export default function portfolioList({ data, pageContext, location }: PageProps<PortfolioListQuery, {}>) {
-
-
+export default function portfolioList({
+    data,
+    pageContext,
+    location,
+}: PageProps<PortfolioListQuery, {}>) {
     useEffect(() => {
-        window.dispatchEvent(new CustomEvent('scroll'))
+        window.dispatchEvent(new CustomEvent("scroll"))
     }, [])
 
     const portfolioItems = data.allMdx.edges.map((item, i) => (
-        <PortfolioItem data={item.node} key={item.node.id} even={(i + 1) % 2 === 0}/>
+        <PortfolioItem
+            data={item.node}
+            key={item.node.id}
+            even={(i + 1) % 2 === 0}
+        />
     ))
 
     return (
@@ -24,10 +30,32 @@ export default function portfolioList({ data, pageContext, location }: PageProps
             location={location}
         >
             <div className="py-12 px-4 lg:px-0">
-                <div className="title py-8 text-center">
-                    <h2 className="font-black text-5xl text-color-1">
-                        Portfolio
-                    </h2>
+                <div
+                    onClick={() => {
+                        if (window.history) window.history.back()
+                    }}
+                    className="title py-8 text-center"
+                >
+                    <h2 className="font-black text-5xl text-color-1">Oferta</h2>
+                </div>
+                <div className="pb-20 text-center">
+                    <p>
+                        Ups. Oferta fizjoterapii koni dostępna jest w menu na
+                        górze w dziale Usługi i Cennik
+                        <span role="img" aria-label="up emoji">
+                            ☝️☝️☝️
+                        </span>
+                    </p>
+                    <p>
+                        <button
+                            onClick={() => {
+                                if (window.history) window.history.back()
+                            }}
+                            className="text-link"
+                        >
+                            Wracam
+                        </button>
+                    </p>
                 </div>
                 <div className="flex flex-wrap">{portfolioItems}</div>
                 <div className="mt-8 lg:mt-24">

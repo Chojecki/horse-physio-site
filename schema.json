@@ -16693,6 +16693,16 @@
               "defaultValue": null
             },
             {
+              "name": "aboutMore",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StringQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "author",
               "description": "",
               "type": {
@@ -17413,6 +17423,18 @@
               "deprecationReason": null
             },
             {
+              "name": "aboutMore",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "author",
               "description": null,
               "args": [],
@@ -17970,6 +17992,12 @@
             },
             {
               "name": "siteMetadata___about",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "siteMetadata___aboutMore",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null

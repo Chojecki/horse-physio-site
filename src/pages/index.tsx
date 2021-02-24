@@ -15,7 +15,7 @@ import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const siteData = data.site.siteMetadata
 
-    const portfolioList = data.portfolio.edges.map((item, _) => (
+    const portfolioList = data.oferta.edges.map((item, _) => (
         <ItemPortfolio
             data={item.node}
             key={`p-item-index-${item.node.id}`}
@@ -38,12 +38,14 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             location={location}
         >
             <Wall data={siteData} />
-            {/* {siteData.about !== "" && <About data={siteData.about} />}
-            <div className="px-4 lg:px-0" id="portfolio">
+            {siteData.about !== "" && (
+                <About data={siteData.about} dataMore={siteData.aboutMore} />
+            )}
+            <div className="px-4 lg:px-0" id="oferta">
                 {portfolioList}
             </div>
-            <Blog>{blogList}</Blog>
-            <Contact data={siteData.contact} /> */}
+            {/* <Blog>{blogList}</Blog> */}
+            <Contact data={siteData.contact} />
         </Layout>
     )
 }
@@ -93,15 +95,13 @@ const Wall = ({ data }) => {
             <p className="text-lg lg:text-xl text-color-2 pt-4 lg:pt-0">
                 {data.introTag}
             </p>
-            <p className="text-base lg:text-lg mt-4">{data.description}</p>
-            <ScrollIntoView selector="#portfolio">
-                <a href="mailto:dorota.horsephysio@gmail.com">
-                    <Button
-                        title="DOWIEDZ SIĘ WIĘCEJ"
-                        type="button"
-                        iconRight={<ArrowRight />}
-                    />
-                </a>
+            <p className="text-base text-lg mt-4">{data.description}</p>
+            <ScrollIntoView selector="#oferta">
+                <Button
+                    title="OFERTA NA MARZEC"
+                    type="button"
+                    iconRight={<ArrowRight />}
+                />
             </ScrollIntoView>
         </React.Fragment>
     )
@@ -142,14 +142,15 @@ const Wall = ({ data }) => {
     )
 }
 
-const About = ({ data }) => {
+const About = ({ data, dataMore }) => {
     return (
         <div className="boxed">
             <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    About
+                    O mnie
                 </h2>
                 <p className="mt-5 text-lg">{data}</p>
+                <p className="mt-5 text-lg">{dataMore}</p>
             </div>
         </div>
     )
@@ -174,7 +175,7 @@ const Contact = ({ data }) => {
         <div className="container mx-auto">
             <div className="pt-20 pb-10 lg:pt-40 lg:pb-20 text-center">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    Contact
+                    Kontakt
                 </h2>
             </div>
             <div className="flex flex-wrap pb-40">
@@ -208,6 +209,7 @@ export const query = graphql`
                 introTag
                 description
                 about
+                aboutMore
                 contact {
                     api_url
                     description
@@ -222,8 +224,8 @@ export const query = graphql`
                 }
             }
         }
-        portfolio: allMdx(
-            filter: { fields: { sourceName: { eq: "portfolio" } } }
+        oferta: allMdx(
+            filter: { fields: { sourceName: { eq: "oferta" } } }
             limit: 6
         ) {
             edges {

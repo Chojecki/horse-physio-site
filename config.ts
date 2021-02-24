@@ -9,8 +9,11 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Dorota Chojecka | Certyfikowany Fizjoterapeuta Koni`,
-    description: `Tel: 695 492 704 Strona w budowie...`,
-    about: "Fizjoterapia koni",
+    description: `Oferuję usługi z zakresu terapii manualnej, masażu, kinezyterapii, stretchingu, fizykoterapii i kinesiotapingu`,
+    about:
+        "Jestem certyfikowanym zoofizjoterapeutą koni. Moim zadaniem jest maksymalne usprawnienie zwierzęcia począwszy od wykonywania manualnych technik masażu i zabiegów fizykalnych poprzez dobór ćwiczeń fizjoterapeutycznych i rehabilitacyjnych dopasowanych do danego przypadku. Każde działanie poprzedzone jest badaniem pacjenta dla potrzeb terapii.",
+    aboutMore:
+        "Ukończyłam kierunkowy kurs w Studium Fizjoterapii Zwierząt - placówce zapewniającej wysoką jakość kształcenia pod okiem profesjonalistów takich jak: Justyna Kalbarczyk (Ori-Chveal),  dr n.wet. Paulina Zielińska (PokWet), dr n. wet Radomira Henklewskiego. Odbyłam również praktykę pod okiem Marty Kulikowskiej (Equi-Physiq). W najbliższej przyszłości planuję rozszerzać swoją wiedzę biorąc udział w organizowanych kursach.",
     author: `pianoDog studio`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -21,22 +24,22 @@ const siteMetadata = {
             name: "START",
             url: "/",
         },
-        // {
-        //     name: "OFERTA",
-        //     url: "/about",
-        // },
+        {
+            name: "O HORSE PHYSIO",
+            url: "/about",
+        },
         // {
         //     name: "BLOG",
         //     url: "/blog",
         // },
-        // {
-        //     name: "USŁIGI I CENNIK",
-        //     url: "/portfolio",
-        // },
-        // {
-        //     name: "KONTAKT",
-        //     url: "/contact",
-        // },
+        {
+            name: "USŁIGI I CENNIK",
+            url: "/oferta/uslugi-fizjoterapii-marzec/",
+        },
+        {
+            name: "KONTAKT",
+            url: "/contact",
+        },
     ],
     footerLinks: [
         {
@@ -56,20 +59,20 @@ const siteMetadata = {
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
-            url: "#",
+            url: "https://www.facebook.com/DorotaHorsePhysio/",
         },
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#",
+            url: "https://www.instagram.com/horsephysio_/",
         },
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
+        api_url: "",
+        description: `Jeżeli szukają Państwo fizjoterapuety koni, serdecznie zapraszam do kontaktu bezpośrednio poprzez telefon, adres email lub za pomocą formularza.`,
+        mail: "dorota.horsephysio@gmail.com",
+        phone: "695 492 704",
         address: "1234 \nLocation \nLocation",
     },
     disqus: "elemental-netlify-com",
@@ -86,21 +89,21 @@ const beforeContactFormSubmit = data => {
     if (data.name.trim().length < 2) {
         errors.push({
             code: 1,
-            message: "Enter a name",
+            message: "Imię",
         })
     }
 
     if (!data.email.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
         errors.push({
             code: 2,
-            message: "Enter a valid email address",
+            message: "Adres Email",
         })
     }
 
     if (data.message.trim().length < 15) {
         errors.push({
             code: 3,
-            message: "Enter a message with atleast 15 characters",
+            message: "Wiadomość...",
         })
     }
 
