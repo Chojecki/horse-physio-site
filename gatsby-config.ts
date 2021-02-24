@@ -9,6 +9,7 @@ const plugins = [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-codegen`,
+    `gatsby-plugin-sitemap`,
     {
         resolve: `gatsby-source-filesystem`,
         options: {
