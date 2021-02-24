@@ -1,6 +1,6 @@
 const siteMetadata = {
     title: `Fizjoterapia Koni`,
-    siteUrl: `http://localhost`,
+    siteUrl: `https://www.horsephysio.pl`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
@@ -8,10 +8,9 @@ const siteMetadata = {
     ogImage: `/images/main1.jpeg`,
     twoColumnWall: true,
     cookiePolicy: true,
-    introTag: `Dorota Chojecka |  Certyfikowany Fizjoterapeuta Koni`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-    about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
+    introTag: `Dorota Chojecka | Certyfikowany Fizjoterapeuta Koni`,
+    description: `Strona w budowie...`,
+    about: "Fizjoterapia koni",
     author: `pianoDog studio`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -22,32 +21,36 @@ const siteMetadata = {
             name: "START",
             url: "/",
         },
-        {
-            name: "OFERTA",
-            url: "/about",
-        },
+        // {
+        //     name: "OFERTA",
+        //     url: "/about",
+        // },
         // {
         //     name: "BLOG",
         //     url: "/blog",
         // },
-        {
-            name: "USŁIGI I CENNIK",
-            url: "/portfolio",
-        },
-        {
-            name: "KONTAKT",
-            url: "/contact",
-        },
+        // {
+        //     name: "USŁIGI I CENNIK",
+        //     url: "/portfolio",
+        // },
+        // {
+        //     name: "KONTAKT",
+        //     url: "/contact",
+        // },
     ],
     footerLinks: [
         {
-            name: "PRIVACY POLICY",
-            url: "/privacy-policy",
+            name: "",
+            url: "/",
         },
-        {
-            name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
-        },
+        // {
+        //     name: "PRIVACY POLICY",
+        //     url: "/privacy-policy",
+        // },
+        // {
+        //     name: "GitHub",
+        //     url: "https://github.com/akzhy/gatsby-starter-elemental",
+        // },
     ],
     social: [
         {

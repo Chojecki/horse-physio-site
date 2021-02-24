@@ -38,12 +38,12 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             location={location}
         >
             <Wall data={siteData} />
-            {siteData.about !== "" && <About data={siteData.about} />}
+            {/* {siteData.about !== "" && <About data={siteData.about} />}
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
             <Blog>{blogList}</Blog>
-            <Contact data={siteData.contact} />
+            <Contact data={siteData.contact} /> */}
         </Layout>
     )
 }
@@ -95,11 +95,13 @@ const Wall = ({ data }) => {
             </p>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
-                <Button
-                    title="DOWIEDZ SIĘ WIĘCEJ"
-                    type="button"
-                    iconRight={<ArrowRight />}
-                />
+                <a href="mailto:dorota.horsephysio@gmail.com">
+                    <Button
+                        title="DOWIEDZ SIĘ WIĘCEJ"
+                        type="button"
+                        iconRight={<ArrowRight />}
+                    />
+                </a>
             </ScrollIntoView>
         </React.Fragment>
     )
