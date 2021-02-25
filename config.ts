@@ -70,7 +70,7 @@ const siteMetadata = {
     contact: {
         // leave empty ('') or false to hide form
         api_url: "",
-        description: `Jeżeli szukają Państwo fizjoterapuety koni, serdecznie zapraszam do kontaktu bezpośrednio poprzez telefon, adres email lub za pomocą formularza.`,
+        description: `Jeżeli szukają Państwo fizjoterapuety koni, serdecznie zapraszam do kontaktu bezpośrednio poprzez telefon lub adres email.`,
         mail: "dorota.horsephysio@gmail.com",
         phone: "695 492 704",
         address: "1234 \nLocation \nLocation",
