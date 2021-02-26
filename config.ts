@@ -33,7 +33,7 @@ const siteMetadata = {
         //     url: "/blog",
         // },
         {
-            name: "USŁIGI I CENNIK",
+            name: "USŁUGI I CENNIK",
             url: "/oferta/uslugi-fizjoterapii-marzec/",
         },
         {
