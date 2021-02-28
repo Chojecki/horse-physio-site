@@ -31,7 +31,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         <Layout
             front={true}
             seo={{
-                title: "Fizjoterapia koni Warszawa",
+                title: "Fizjoterapeuta koni Warszawa",
                 description: siteData.description,
             }}
             navPlaceholder={false}
