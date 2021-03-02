@@ -44,7 +44,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             <div className="px-4 lg:px-0" id="oferta">
                 {portfolioList}
             </div>
-            {/* <Blog>{blogList}</Blog> */}
+            <Blog>{blogList}</Blog>
             <Contact data={siteData.contact} />
         </Layout>
     )

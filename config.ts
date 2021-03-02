@@ -28,10 +28,10 @@ const siteMetadata = {
             name: "O HORSE PHYSIO",
             url: "/about",
         },
-        // {
-        //     name: "BLOG",
-        //     url: "/blog",
-        // },
+        {
+            name: "BLOG",
+            url: "/blog",
+        },
         {
             name: "USŁUGI I CENNIK",
             url: "/oferta/uslugi-fizjoterapii-marzec/",

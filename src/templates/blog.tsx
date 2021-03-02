@@ -17,7 +17,7 @@ export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
             seo={{
                 title: data.mdx.frontmatter.title,
                 description: data.mdx.frontmatter.description,
-                image: data.mdx.frontmatter.banner.publicURL
+                image: data.mdx.frontmatter.banner.publicURL,
             }}
             location={location}
         >
@@ -50,9 +50,9 @@ export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
                         <MDXRenderer>{data.mdx.body}</MDXRenderer>
                     </MDXProvider>
                 </div>
-                <div className="comments mt-8">
+                {/* <div className="comments mt-8">
                     <Comments title={data.mdx.frontmatter.title} location={location} />
-                </div>
+                </div> */}
             </div>
         </Layout>
     )
