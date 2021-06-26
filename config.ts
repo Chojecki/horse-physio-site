@@ -1,5 +1,5 @@
 const siteMetadata = {
-    title: `Fizjoterapia Koni`,
+    title: `Fizjoterapia Koni | Rehabilitacja Koni`,
     siteUrl: `https://www.horsephysio.pl`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
