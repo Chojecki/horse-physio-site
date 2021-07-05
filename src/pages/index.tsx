@@ -84,7 +84,7 @@ const Wall = ({ data }) => {
         <React.Fragment>
             <div className="title bg-bg">
                 <h1
-                    className={`text-6xl relative lg:text-7xl ${
+                    className={`text-5xl relative lg:text-6 xl ${
                         data.capitalizeTitleOnHome ? "uppercase" : ""
                     }`}
                 >
