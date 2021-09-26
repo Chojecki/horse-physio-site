@@ -34,7 +34,7 @@ const siteMetadata = {
         },
         {
             name: "USŁUGI I CENNIK",
-            url: "/oferta/uslugi-fizjoterapii-czerwiec/",
+            url: "/oferta/uslugi-fizjoterapii/",
         },
         {
             name: "KONTAKT",
