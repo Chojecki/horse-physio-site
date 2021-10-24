@@ -11,7 +11,7 @@ const siteMetadata = {
     introTag: `Dorota Chojecka | Certyfikowany Fizjoterapeuta Koni`,
     description: `Oferuję usługi z zakresu terapii manualnej, masażu, kinezyterapii, stretchingu, fizykoterapii i kinesiotapingu`,
     about:
-        "Jestem certyfikowanym zoofizjoterapeutą koni. Moim zadaniem jest maksymalne usprawnienie zwierzęcia począwszy od wykonywania manualnych technik masażu i zabiegów fizykalnych poprzez dobór ćwiczeń fizjoterapeutycznych i rehabilitacyjnych dopasowanych do danego przypadku. Każde działanie poprzedzone jest badaniem pacjenta dla potrzeb terapii.",
+        "Jestem certyfikowanym zoofizjoterapeutą koni. Moim zadaniem jest maksymalne usprawnienie zwierzęcia począwszy od wykonywania manualnych technik masażu i zabiegów fizykalnych poprzez dobór ćwiczeń fizjoterapeutycznych i rehabilitacyjnych dopasowanych do danego przypadku. Każde działanie poprzedzone jest badaniem pacjenta dla potrzeb terapii. Pracuje głównie w województwie Mazowieckim.",
     aboutMore:
         "Ukończyłam kierunkowy kurs w Studium Fizjoterapii Zwierząt - placówce zapewniającej wysoką jakość kształcenia pod okiem profesjonalistów takich jak: Justyna Kalbarczyk (Ori-Chveal),  dr n.wet. Paulina Zielińska (PokWet), dr n. wet Radomira Henklewskiego. Odbyłam również praktykę pod okiem Marty Kulikowskiej (Equi-Physiq). W najbliższej przyszłości planuję rozszerzać swoją wiedzę biorąc udział w organizowanych kursach.",
     author: `pianoDog studio`,

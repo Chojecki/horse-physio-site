@@ -31,7 +31,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         <Layout
             front={true}
             seo={{
-                title: "Fizjoterapeuta koni Warszawa | Rehabilitacja konia",
+                title: "Fizjoterapeuta koni Mazowieckie | Rehabilitacja konia",
                 description: siteData.description,
             }}
             navPlaceholder={false}

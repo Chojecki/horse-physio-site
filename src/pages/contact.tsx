@@ -11,7 +11,8 @@ export default ({ data, location }: PageProps<ContactQuery>) => {
     return (
         <Layout
             seo={{
-                title: "Kontakt do fizjoterapuety koni",
+                title:
+                    "Kontakt do fizjoterapuety koni. Wojewózdztwo Mazowieckie",
             }}
             location={location}
         >
