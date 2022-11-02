@@ -1,5 +1,5 @@
 const siteMetadata = {
-    title: `Fizjoterapia Koni | Rehabilitacja Koni`,
+    title: `Fizjoterapia Koni | Rehabilitacja Koni | Derka magnetyczna`,
     siteUrl: `https://www.horsephysio.pl`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
@@ -9,7 +9,7 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Dorota Chojecka | Certyfikowany Fizjoterapeuta Koni`,
-    description: `Oferuję usługi z zakresu terapii manualnej, masażu, kinezyterapii, stretchingu, fizykoterapii i kinesiotapingu`,
+    description: `Oferuję usługi z zakresu terapii manualnej, masażu, kinezyterapii, stretchingu, fizykoterapii i kinesiotapingu. Jako wsparcie terapii i rehabilitacji oferuję zabiegi pulsacyjnym polem magnetycznym ( Derka magnetyczna marki Biomag Vet Clinic )`,
     about:
         "Jestem certyfikowanym zoofizjoterapeutą koni. Moim zadaniem jest maksymalne usprawnienie zwierzęcia począwszy od wykonywania manualnych technik masażu i zabiegów fizykalnych poprzez dobór ćwiczeń fizjoterapeutycznych i rehabilitacyjnych dopasowanych do danego przypadku. Każde działanie poprzedzone jest badaniem pacjenta dla potrzeb terapii. Pracuje głównie w województwie Mazowieckim.",
     aboutMore:

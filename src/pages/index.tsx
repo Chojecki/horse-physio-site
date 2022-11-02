@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react"
 import { graphql, PageProps } from "gatsby"
+import React, { useEffect, useRef, useState } from "react"
 
 import { ArrowRight } from "react-feather"
 import ScrollIntoView from "react-scroll-into-view"
@@ -7,9 +7,9 @@ import ScrollIntoView from "react-scroll-into-view"
 import Layout from "../components/layout"
 import { Button } from "../components/ui"
 
-import ItemPortfolio from "../components/item-portfolio"
+import { Description as ContactDescription, Form } from "../components/contact"
 import ItemBlog from "../components/item-blog"
-import { Form, Description as ContactDescription } from "../components/contact"
+import ItemPortfolio from "../components/item-portfolio"
 import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
@@ -250,6 +250,7 @@ export const query = graphql`
         }
         blog: allMdx(
             filter: { fields: { sourceName: { eq: "blog" } } }
+            sort: { fields: [frontmatter___date], order: DESC }
             limit: 6
         ) {
             edges {
