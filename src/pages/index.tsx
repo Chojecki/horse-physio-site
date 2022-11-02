@@ -31,7 +31,8 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         <Layout
             front={true}
             seo={{
-                title: "Fizjoterapeuta koni Mazowieckie | Rehabilitacja konia",
+                title:
+                    "Fizjoterapeuta koni Mazowieckie | Rehabilitacja konia | Derka magnetyczna",
                 description: siteData.description,
             }}
             navPlaceholder={false}
