@@ -1,15 +1,12 @@
 import { graphql, PageProps } from "gatsby"
 import React, { useEffect, useRef, useState } from "react"
-
 import { ArrowRight } from "react-feather"
 import ScrollIntoView from "react-scroll-into-view"
-
-import Layout from "../components/layout"
-import { Button } from "../components/ui"
-
 import { Description as ContactDescription, Form } from "../components/contact"
 import ItemBlog from "../components/item-blog"
 import ItemPortfolio from "../components/item-portfolio"
+import Layout from "../components/layout"
+import { Button } from "../components/ui"
 import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
@@ -42,9 +39,10 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             {siteData.about !== "" && (
                 <About data={siteData.about} dataMore={siteData.aboutMore} />
             )}
-            <div className="px-4 lg:px-0" id="oferta">
+            <div className="px-4 lg:px-0 overflow-hidden" id="oferta">
                 {portfolioList}
             </div>
+            <FaqCta />
             <Blog>{blogList}</Blog>
             <Contact data={siteData.contact} />
         </Layout>
@@ -166,6 +164,31 @@ const Blog = ({ children }) => {
                 </h2>
             </div>
             <div className="flex flex-wrap">{children}</div>
+        </div>
+    )
+}
+
+const FaqCta = () => {
+    return (
+        <div className="bg-bgalt">
+            <div className="container mx-auto px-4 py-16 lg:py-20 text-center">
+                <h2 className="text-color-1 font-black text-4xl lg:text-5xl">
+                    Najczęstsze pytania
+                </h2>
+                <p className="mt-4 text-lg text-color-default max-w-2xl mx-auto">
+                    Znajdziesz tu odpowiedzi na pytania dotyczące pierwszej
+                    wizyty, przygotowania konia oraz rehabilitacji po urazach i
+                    zabiegach.
+                </p>
+                <div className="mt-6 inline-block">
+                    <Button
+                        to="/faq"
+                        label="Przejdź do najczęstszych pytań"
+                        title="Zobacz FAQ"
+                        iconRight={<ArrowRight />}
+                    />
+                </div>
+            </div>
         </div>
     )
 }

@@ -33,6 +33,10 @@ const siteMetadata = {
             url: "/blog",
         },
         {
+            name: "FAQ",
+            url: "/faq",
+        },
+        {
             name: "USŁUGI I CENNIK",
             url: "/oferta/uslugi-fizjoterapii/",
         },
