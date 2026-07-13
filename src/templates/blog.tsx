@@ -22,11 +22,13 @@ export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
             location={location}
         >
             <div className="md:px-4 mt-12 py-6 md:w-11/12 mx-auto">
-                <div className="mx-auto relative">
+                <div className="mx-auto relative md:max-w-5xl">
                     <Img
                         fluid={
                             data.mdx.frontmatter.banner.childImageSharp.fluid
                         }
+                        className="md:max-h-96"
+                        imgStyle={{ objectFit: "cover" }}
                     />
                     <div className="relative w-full lg:w-3/4 md:w-11/12 sm:w-full p-6 box-border lg:box-content mx-auto bg-bg text-color-default blog-wall-content shadow-xl md:-mt-16 ">
                         <div className="p-3">
